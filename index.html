@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Decodificador</title>
+</head>
+<body>
+    <header class="header">
+        <img src="assets/logo_alura.svg" alt="Logo da Alura" class="header__imagem">
+    </header>
+    <main class="main">
+        <section class="section__texto">
+            <textarea  type="text" placeholder="Digite seu texto" class="section__texto__caixa_texto" id="texto" required></textarea>
+            
+            <p class="section__texto__aviso" id="aviso"> <img src="assets/ponto_exclamacao.svg" alt="Ponto de exclamação" class="section__texto__imagem">Apenas letras minúsculas e sem acento.</p>
+            <div class="section__texto__btns">
+                <button class="btn section__texto__btns__criptografar" onclick="criptografar()">Criptografar</button>
+                <button class="btn section__texto__btns__descriptografar" onclick="descriptografar()">Descriptografar</button>
+            </div>
+        </section>
+        <section class="section__resultado" >
+            <div class="resultado" id="resultado">
+                <span></span>
+            </div>
+            <div class="section__resultado__texto" id="imagem_texto">
+                <img src="assets/imagem_menino.svg" alt="Imagem de um menino" class="section__resultado__imagem">
+                <p class="section__resultado__texto__paragrafo__negrito">Nenhuma mensagem encontrada</p>
+                <p class="section__resultado__texto__paragrafo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>  
+            <div class="section__resultado__btn">
+                <button id="botao_copiar" class="btn section__resultado__btns">Copiar</button>
+            </div>   
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy;Talita Nicole Freitas Duarte</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
+
